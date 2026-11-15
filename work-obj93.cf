@@ -1,0 +1,606 @@
+v 4
+file . "tz-01-log/tz_log_010_widthconv/tb/tb_tz_log_010_widthconv.vhd" "91f7dc0ac96dd43ee7a25c0cb76e80b72cfbe94a" "20261115215918.754":
+  entity tb_tz_log_010_widthconv at 1( 0) + 0 on 6647;
+  architecture sim of tb_tz_log_010_widthconv at 9( 157) + 0 on 6648;
+file . "tz-01-log/tz_log_009_pulsegen/tb/tb_tz_log_009_pulsegen.vhd" "bfe11279a0d7861484f5396d84311d25fecde57a" "20261115215918.208":
+  entity tb_tz_log_009_pulsegen at 1( 0) + 0 on 6643;
+  architecture sim of tb_tz_log_009_pulsegen at 9( 156) + 0 on 6644;
+file . "tz-01-log/tz_log_008_fsm/tb/tb_tz_log_008_fsm.vhd" "9377c3d334092e2680c60ef596ca12ef1daa2d14" "20261115215917.647":
+  entity tb_tz_log_008_fsm at 1( 0) + 0 on 6639;
+  architecture sim of tb_tz_log_008_fsm at 9( 151) + 0 on 6640;
+file . "tz-01-log/tz_log_007_alu/tb/tb_tz_log_007_alu.vhd" "45774422e83677d3cf3174446e60280e2b957bac" "20261115215917.114":
+  entity tb_tz_log_007_alu at 1( 0) + 0 on 6635;
+  architecture sim of tb_tz_log_007_alu at 9( 151) + 0 on 6636;
+file . "tz-01-log/tz_log_006_decoder/tb/tb_tz_log_006_decoder.vhd" "c45f553fdfcba78625f69b94538a5e30f2942c47" "20261115215916.587":
+  entity tb_tz_log_006_decoder at 1( 0) + 0 on 6631;
+  architecture sim of tb_tz_log_006_decoder at 9( 155) + 0 on 6632;
+file . "tz-01-log/tz_log_005_comparator/tb/tb_tz_log_005_comparator.vhd" "f81816126ebe4644052755be152d47176f951e14" "20261115215916.064":
+  entity tb_tz_log_005_comparator at 1( 0) + 0 on 6627;
+  architecture sim of tb_tz_log_005_comparator at 9( 158) + 0 on 6628;
+file . "tz-01-log/tz_log_004_shiftreg/tb/tb_tz_log_004_shiftreg.vhd" "0db82c618ec33bb99cb9a134ee44f3b1ae68b2f0" "20261115215915.536":
+  entity tb_tz_log_004_shiftreg at 1( 0) + 0 on 6623;
+  architecture sim of tb_tz_log_004_shiftreg at 9( 156) + 0 on 6624;
+file . "tz-01-log/tz_log_003_freqdiv/tb/tb_tz_log_003_freqdiv.vhd" "a8042e3fd3bfd924e114885429a32a931ac6c3a9" "20261115215914.985":
+  entity tb_tz_log_003_freqdiv at 1( 0) + 0 on 6619;
+  architecture sim of tb_tz_log_003_freqdiv at 9( 155) + 0 on 6620;
+file . "tz-01-log/tz_log_002_counter/rtl/tb_tz_log_002_counter.vhd" "c1d4f4bb6060dbffb52e87708227f71d3b91c7e5" "20261115215914.435":
+  entity tb_tz_log_002_counter at 1( 0) + 0 on 6615;
+  architecture sim of tb_tz_log_002_counter at 9( 155) + 0 on 6616;
+file . "tz-01-log/tz_log_001_mux/rtl/tb_tz_log_001_mux.vhd" "1d3514e32d3b87ed75d0fc84f045b216c0b4e8db" "20261115215913.925":
+  entity tb_tz_log_001_mux at 1( 0) + 0 on 6611;
+  architecture sim of tb_tz_log_001_mux at 9( 151) + 0 on 6612;
+file . "tz-10-esp/tz_esp_010_nn_accel/tb/tb_tz_esp_010_nn_accel.vhd" "f5e8b5c4a2609b406f0a7532f624f6e083b484e6" "20261115220022.803":
+  entity tb_tz_esp_010_nn_accel at 1( 0) + 0 on 7007;
+  architecture sim of tb_tz_esp_010_nn_accel at 9( 156) + 0 on 7008;
+file . "tz-10-esp/tz_esp_009_telecom_dsp/tb/tb_tz_esp_009_telecom_dsp.vhd" "e748e62eb82dc2cbf48d20cf72eb07000d60b736" "20261115220021.778":
+  entity tb_tz_esp_009_telecom_dsp at 1( 0) + 0 on 7003;
+  architecture sim of tb_tz_esp_009_telecom_dsp at 9( 159) + 0 on 7004;
+file . "tz-10-esp/tz_esp_008_sci_inst/tb/tb_tz_esp_008_sci_inst.vhd" "13ff15268d490f7f999ec248873d7087f9bac343" "20261115220021.031":
+  entity tb_tz_esp_008_sci_inst at 1( 0) + 0 on 6999;
+  architecture sim of tb_tz_esp_008_sci_inst at 9( 156) + 0 on 7000;
+file . "tz-10-esp/tz_esp_007_ind_net/tb/tb_tz_esp_007_ind_net.vhd" "4ebebe4a4e409fa0748d71ece8dd10d336446c06" "20261115220019.843":
+  entity tb_tz_esp_007_ind_net at 1( 0) + 0 on 6995;
+  architecture sim of tb_tz_esp_007_ind_net at 9( 155) + 0 on 6996;
+file . "tz-10-esp/tz_esp_006_cv_engine/tb/tb_tz_esp_006_cv_engine.vhd" "dd01976f5fdc383842fbb00a99f49df2fdf77e5a" "20261115220019.102":
+  entity tb_tz_esp_006_cv_engine at 1( 0) + 0 on 6991;
+  architecture sim of tb_tz_esp_006_cv_engine at 9( 157) + 0 on 6992;
+file . "tz-10-esp/tz_esp_005_err_corr/tb/tb_tz_esp_005_err_corr.vhd" "86a1d1d5d98574a71927f3d3d343f457d33576dd" "20261115220018.172":
+  entity tb_tz_esp_005_err_corr at 1( 0) + 0 on 6987;
+  architecture sim of tb_tz_esp_005_err_corr at 9( 156) + 0 on 6988;
+file . "tz-10-esp/tz_esp_004_aes/tb/tb_tz_esp_004_aes.vhd" "84743e7c43548a753d144db4418220a6e5938141" "20261115220017.518":
+  entity tb_tz_esp_004_aes at 1( 0) + 0 on 6983;
+  architecture sim of tb_tz_esp_004_aes at 9( 151) + 0 on 6984;
+file . "tz-10-esp/tz_esp_003_auto_nav/tb/tb_tz_esp_003_auto_nav.vhd" "a20386e4a2bb36d5a6ba1355db62f9a8adb8e8e3" "20261115220016.766":
+  entity tb_tz_esp_003_auto_nav at 1( 0) + 0 on 6979;
+  architecture sim of tb_tz_esp_003_auto_nav at 9( 156) + 0 on 6980;
+file . "tz-10-esp/tz_esp_002_robotics/tb/tb_tz_esp_002_robotics.vhd" "c9eee531ff60730658a17928583c387dc2061410" "20261115220016.089":
+  entity tb_tz_esp_002_robotics at 1( 0) + 0 on 6975;
+  architecture sim of tb_tz_esp_002_robotics at 9( 156) + 0 on 6976;
+file . "tz-10-esp/tz_esp_001_sensor_fusion/tb/tb_tz_esp_001_sensor_fusion.vhd" "8bbb576c8865b93fbc0975956270619e169584e1" "20261115220015.104":
+  entity tb_tz_esp_001_sensor_fusion at 1( 0) + 0 on 6971;
+  architecture sim of tb_tz_esp_001_sensor_fusion at 9( 161) + 0 on 6972;
+file . "tz-09-dbg/tz_dbg_010_trigger/tb/tb_tz_dbg_010_trigger.vhd" "8255c69f240d98937b25831eb76e3f174a67f99f" "20261115220014.329":
+  entity tb_tz_dbg_010_trigger at 1( 0) + 0 on 6967;
+  architecture sim of tb_tz_dbg_010_trigger at 9( 155) + 0 on 6968;
+file . "tz-09-dbg/tz_dbg_009_bus_mon/tb/tb_tz_dbg_009_bus_mon.vhd" "4c4b35fe7cc1467166b4a251e61eefa303d9948b" "20261115220013.327":
+  entity tb_tz_dbg_009_bus_mon at 1( 0) + 0 on 6963;
+  architecture sim of tb_tz_dbg_009_bus_mon at 9( 155) + 0 on 6964;
+file . "tz-09-dbg/tz_dbg_008_perf_mon/tb/tb_tz_dbg_008_perf_mon.vhd" "14dbea99954ead954d34858dfef665891c6b56e9" "20261115220012.661":
+  entity tb_tz_dbg_008_perf_mon at 1( 0) + 0 on 6959;
+  architecture sim of tb_tz_dbg_008_perf_mon at 9( 156) + 0 on 6960;
+file . "tz-09-dbg/tz_dbg_007_prbs/tb/tb_tz_dbg_007_prbs.vhd" "5dd66a1d359dfe1570bfbf1f3fa642cc0472c4ef" "20261115220011.770":
+  entity tb_tz_dbg_007_prbs at 1( 0) + 0 on 6955;
+  architecture sim of tb_tz_dbg_007_prbs at 9( 152) + 0 on 6956;
+file . "tz-09-dbg/tz_dbg_006_crc/tb/tb_tz_dbg_006_crc.vhd" "16925e6746b8c8f25b197e66930bae1f8c43eac2" "20261115220010.963":
+  entity tb_tz_dbg_006_crc at 1( 0) + 0 on 6951;
+  architecture sim of tb_tz_dbg_006_crc at 9( 151) + 0 on 6952;
+file . "tz-09-dbg/tz_dbg_005_err_count/tb/tb_tz_dbg_005_err_count.vhd" "408779ccd27e7e1b794cc9c59390cf83e89964de" "20261115220010.205":
+  entity tb_tz_dbg_005_err_count at 1( 0) + 0 on 6947;
+  architecture sim of tb_tz_dbg_005_err_count at 9( 157) + 0 on 6948;
+file . "tz-09-dbg/tz_dbg_004_wave_cap/tb/tb_tz_dbg_004_wave_cap.vhd" "a559f9469b0724203cab429bfa58e8a7f0ea793e" "20261115220009.426":
+  entity tb_tz_dbg_004_wave_cap at 1( 0) + 0 on 6943;
+  architecture sim of tb_tz_dbg_004_wave_cap at 9( 156) + 0 on 6944;
+file . "tz-09-dbg/tz_dbg_003_test_sig/tb/tb_tz_dbg_003_test_sig.vhd" "a58a035396681f4bc23239f950d6cd1f93732e76" "20261115220008.130":
+  entity tb_tz_dbg_003_test_sig at 1( 0) + 0 on 6939;
+  architecture sim of tb_tz_dbg_003_test_sig at 9( 156) + 0 on 6940;
+file . "tz-09-dbg/tz_dbg_002_pat_gen/tb/tb_tz_dbg_002_pat_gen.vhd" "a68fa01350a24b8df9eaef24c872f60645cb459b" "20261115220007.378":
+  entity tb_tz_dbg_002_pat_gen at 1( 0) + 0 on 6935;
+  architecture sim of tb_tz_dbg_002_pat_gen at 9( 155) + 0 on 6936;
+file . "tz-09-dbg/tz_dbg_001_logic_ana/tb/tb_tz_dbg_001_logic_ana.vhd" "c87f1b06a7bd36d4e19bd9e41467c8bbab967d48" "20261115220006.574":
+  entity tb_tz_dbg_001_logic_ana at 1( 0) + 0 on 6931;
+  architecture sim of tb_tz_dbg_001_logic_ana at 9( 157) + 0 on 6932;
+file . "tz-08-sys/tz_sys_010_bus_bridge/tb/tb_tz_sys_010_bus_bridge.vhd" "d7c8616df580ad178ac9b6e00c954e962d8fecaa" "20261115220005.866":
+  entity tb_tz_sys_010_bus_bridge at 1( 0) + 0 on 6927;
+  architecture sim of tb_tz_sys_010_bus_bridge at 9( 158) + 0 on 6928;
+file . "tz-08-sys/tz_sys_009_soc_interconnect/tb/tb_tz_sys_009_soc_interconnect.vhd" "171a1dbba088d1bf590841646c1d72a670a5e700" "20261115220005.207":
+  entity tb_tz_sys_009_soc_interconnect at 1( 0) + 0 on 6923;
+  architecture sim of tb_tz_sys_009_soc_interconnect at 9( 164) + 0 on 6924;
+file . "tz-08-sys/tz_sys_008_reg_bank/tb/tb_tz_sys_008_reg_bank.vhd" "dd6acc2ebe68b67cb4be79c68b7222ad4ebec922" "20261115220004.558":
+  entity tb_tz_sys_008_reg_bank at 1( 0) + 0 on 6919;
+  architecture sim of tb_tz_sys_008_reg_bank at 9( 156) + 0 on 6920;
+file . "tz-08-sys/tz_sys_007_wishbone/tb/tb_tz_sys_007_wishbone.vhd" "fa1ee38e7a92d10e60887dae71fd0108a2e9d80e" "20261115220003.585":
+  entity tb_tz_sys_007_wishbone at 1( 0) + 0 on 6915;
+  architecture sim of tb_tz_sys_007_wishbone at 9( 156) + 0 on 6916;
+file . "tz-08-sys/tz_sys_006_avalon/tb/tb_tz_sys_006_avalon.vhd" "688828c6f7acc8e7266820cb48811949e07117e1" "20261115220002.884":
+  entity tb_tz_sys_006_avalon at 1( 0) + 0 on 6911;
+  architecture sim of tb_tz_sys_006_avalon at 9( 154) + 0 on 6912;
+file . "tz-08-sys/tz_sys_005_axi4_lite/tb/tb_tz_sys_005_axi4_lite.vhd" "ca7c64962fa2f12a9073712224b1669facbf758a" "20261115220002.248":
+  entity tb_tz_sys_005_axi4_lite at 1( 0) + 0 on 6907;
+  architecture sim of tb_tz_sys_005_axi4_lite at 9( 157) + 0 on 6908;
+file . "tz-08-sys/tz_sys_004_int_bus/tb/tb_tz_sys_004_int_bus.vhd" "e07ed4c04820edc7af75bc3bae3ae97dd03f9114" "20261115220001.519":
+  entity tb_tz_sys_004_int_bus at 1( 0) + 0 on 6903;
+  architecture sim of tb_tz_sys_004_int_bus at 9( 155) + 0 on 6904;
+file . "tz-08-sys/tz_sys_003_int_ctrl/tb/tb_tz_sys_003_int_ctrl.vhd" "bee2c48aff6ee655adb31a0900a8bf76a072b1d2" "20261115220000.760":
+  entity tb_tz_sys_003_int_ctrl at 1( 0) + 0 on 6899;
+  architecture sim of tb_tz_sys_003_int_ctrl at 9( 156) + 0 on 6900;
+file . "tz-08-sys/tz_sys_002_riscv/tb/tb_tz_sys_002_riscv.vhd" "b6e4b2916bcdc7657fcb30376c4cd3ca2bda83eb" "20261115215959.440":
+  entity tb_tz_sys_002_riscv at 1( 0) + 0 on 6895;
+  architecture sim of tb_tz_sys_002_riscv at 9( 153) + 0 on 6896;
+file . "tz-08-sys/tz_sys_001_softcore/tb/tb_tz_sys_001_softcore.vhd" "15c5ff97cd2dfabcd296fc6033e6248103eae7f6" "20261115215958.721":
+  entity tb_tz_sys_001_softcore at 1( 0) + 0 on 6891;
+  architecture sim of tb_tz_sys_001_softcore at 9( 156) + 0 on 6892;
+file . "tz-07-mem/tz_mem_010_dma/tb/tb_tz_mem_010_dma.vhd" "930904043dda9dbbb2d40d28ee49a21ed13e471e" "20261115215957.989":
+  entity tb_tz_mem_010_dma at 1( 0) + 0 on 6887;
+  architecture sim of tb_tz_mem_010_dma at 9( 151) + 0 on 6888;
+file . "tz-07-mem/tz_mem_009_sd_card/tb/tb_tz_mem_009_sd_card.vhd" "969d98cd5e4f15134393b45fb8f5d307bbc1dfd8" "20261115215957.343":
+  entity tb_tz_mem_009_sd_card at 1( 0) + 0 on 6883;
+  architecture sim of tb_tz_mem_009_sd_card at 9( 155) + 0 on 6884;
+file . "tz-07-mem/tz_mem_008_spi_flash/tb/tb_tz_mem_008_spi_flash.vhd" "2a0ed19209947d700684ed77fc9fd508b837f734" "20261115215956.730":
+  entity tb_tz_mem_008_spi_flash at 1( 0) + 0 on 6879;
+  architecture sim of tb_tz_mem_008_spi_flash at 9( 157) + 0 on 6880;
+file . "tz-07-mem/tz_mem_007_ddr/tb/tb_tz_mem_007_ddr.vhd" "a0520d1fcc7218c142391c10f08d40a9bf3f5367" "20261115215956.091":
+  entity tb_tz_mem_007_ddr at 1( 0) + 0 on 6875;
+  architecture sim of tb_tz_mem_007_ddr at 9( 151) + 0 on 6876;
+file . "tz-07-mem/tz_mem_006_sdram/tb/tb_tz_mem_006_sdram.vhd" "201771bb42862c310867b8feb4d282aa4d250c32" "20261115215955.421":
+  entity tb_tz_mem_006_sdram at 1( 0) + 0 on 6871;
+  architecture sim of tb_tz_mem_006_sdram at 9( 153) + 0 on 6872;
+file . "tz-07-mem/tz_mem_005_sram/tb/tb_tz_mem_005_sram.vhd" "5a0f515428c24ab1673432f4f7b3c8fae5e0870a" "20261115215954.784":
+  entity tb_tz_mem_005_sram at 1( 0) + 0 on 6867;
+  architecture sim of tb_tz_mem_005_sram at 9( 152) + 0 on 6868;
+file . "tz-07-mem/tz_mem_004_async_fifo/tb/tb_tz_mem_004_async_fifo.vhd" "5f92adab86dc7297c84c4954afeaf0ebf3630250" "20261115215954.151":
+  entity tb_tz_mem_004_async_fifo at 1( 0) + 0 on 6863;
+  architecture sim of tb_tz_mem_004_async_fifo at 9( 158) + 0 on 6864;
+file . "tz-07-mem/tz_mem_003_sync_fifo/tb/tb_tz_mem_003_sync_fifo.vhd" "1e41b35809dd270ee5e29b1cae29699f2919495c" "20261115215953.411":
+  entity tb_tz_mem_003_sync_fifo at 1( 0) + 0 on 6859;
+  architecture sim of tb_tz_mem_003_sync_fifo at 9( 157) + 0 on 6860;
+file . "tz-07-mem/tz_mem_002_rom/tb/tb_tz_mem_002_rom.vhd" "41096ac73aded2f09be232672be3573fc77962a4" "20261115215952.695":
+  entity tb_tz_mem_002_rom at 1( 0) + 0 on 6855;
+  architecture sim of tb_tz_mem_002_rom at 9( 151) + 0 on 6856;
+file . "tz-07-mem/tz_mem_001_ram/tb/tb_tz_mem_001_ram.vhd" "c58bd0094850b0fdd9a44051e41613a69d6f7a2a" "20261115215952.062":
+  entity tb_tz_mem_001_ram at 1( 0) + 0 on 6851;
+  architecture sim of tb_tz_mem_001_ram at 9( 151) + 0 on 6852;
+file . "tz-06-dsp/tz_dsp_010_demodulator/tb/tb_tz_dsp_010_demodulator.vhd" "ea4533292844e7446da2a7c366a2019eabbed7c5" "20261115215951.082":
+  entity tb_tz_dsp_010_demodulator at 1( 0) + 0 on 6847;
+  architecture sim of tb_tz_dsp_010_demodulator at 9( 159) + 0 on 6848;
+file . "tz-06-dsp/tz_dsp_009_modulator/tb/tb_tz_dsp_009_modulator.vhd" "bffb92090513ecd5fa34be210870b82e4899baf0" "20261115215950.210":
+  entity tb_tz_dsp_009_modulator at 1( 0) + 0 on 6843;
+  architecture sim of tb_tz_dsp_009_modulator at 9( 157) + 0 on 6844;
+file . "tz-06-dsp/tz_dsp_008_freq_det/tb/tb_tz_dsp_008_freq_det.vhd" "2f3a944d0368818532e7285930e856e7045a8a61" "20261115215949.538":
+  entity tb_tz_dsp_008_freq_det at 1( 0) + 0 on 6839;
+  architecture sim of tb_tz_dsp_008_freq_det at 9( 156) + 0 on 6840;
+file . "tz-06-dsp/tz_dsp_007_cordic/tb/tb_tz_dsp_007_cordic.vhd" "b33f22e197e843806319213ec5544b89c343f485" "20261115215948.885":
+  entity tb_tz_dsp_007_cordic at 1( 0) + 0 on 6835;
+  architecture sim of tb_tz_dsp_007_cordic at 9( 154) + 0 on 6836;
+file . "tz-06-dsp/tz_dsp_006_dds/tb/tb_tz_dsp_006_dds.vhd" "592f52f65c0455ceef1fabba1cc5f8290b2f8415" "20261115215948.251":
+  entity tb_tz_dsp_006_dds at 1( 0) + 0 on 6831;
+  architecture sim of tb_tz_dsp_006_dds at 9( 151) + 0 on 6832;
+file . "tz-06-dsp/tz_dsp_005_mac/tb/tb_tz_dsp_005_mac.vhd" "920f147730b1856f4f3b541aa9d035abdb6577db" "20261115215947.613":
+  entity tb_tz_dsp_005_mac at 1( 0) + 0 on 6827;
+  architecture sim of tb_tz_dsp_005_mac at 9( 151) + 0 on 6828;
+file . "tz-06-dsp/tz_dsp_004_ifft/tb/tb_tz_dsp_004_ifft.vhd" "8be1f381a1ec4f3e2fc93f4d38df5b8defb043fa" "20261115215946.971":
+  entity tb_tz_dsp_004_ifft at 1( 0) + 0 on 6823;
+  architecture sim of tb_tz_dsp_004_ifft at 9( 152) + 0 on 6824;
+file . "tz-06-dsp/tz_dsp_003_fft/tb/tb_tz_dsp_003_fft.vhd" "b28ae8f611c0196f9de92a9b1b109e8f8ca745a1" "20261115215946.347":
+  entity tb_tz_dsp_003_fft at 1( 0) + 0 on 6819;
+  architecture sim of tb_tz_dsp_003_fft at 9( 151) + 0 on 6820;
+file . "tz-06-dsp/tz_dsp_002_iir/tb/tb_tz_dsp_002_iir.vhd" "b8457858036b33df45857b345bbd8cb0c4599267" "20261115215945.485":
+  entity tb_tz_dsp_002_iir at 1( 0) + 0 on 6815;
+  architecture sim of tb_tz_dsp_002_iir at 9( 151) + 0 on 6816;
+file . "tz-06-dsp/tz_dsp_001_fir/tb/tb_tz_dsp_001_fir.vhd" "cb5f2f404d0ca9be26d2552b07ee4a5187d84691" "20261115215944.781":
+  entity tb_tz_dsp_001_fir at 1( 0) + 0 on 6811;
+  architecture sim of tb_tz_dsp_001_fir at 9( 151) + 0 on 6812;
+file . "tz-05-vid/tz_vid_010_pix_fmt/tb/tb_tz_vid_010_pix_fmt.vhd" "edec5e21984a18f1c84511431e1800145c0a23e1" "20261115215944.116":
+  entity tb_tz_vid_010_pix_fmt at 1( 0) + 0 on 6807;
+  architecture sim of tb_tz_vid_010_pix_fmt at 9( 155) + 0 on 6808;
+file . "tz-05-vid/tz_vid_009_hdmi/tb/tb_tz_vid_009_hdmi.vhd" "d7f4a283afea9c98513613bd1c822867d1908adb" "20261115215943.508":
+  entity tb_tz_vid_009_hdmi at 1( 0) + 0 on 6803;
+  architecture sim of tb_tz_vid_009_hdmi at 9( 152) + 0 on 6804;
+file . "tz-05-vid/tz_vid_008_shape_gen/tb/tb_tz_vid_008_shape_gen.vhd" "3e081ca6fe85d37678502c1cef4286c3f85f44d7" "20261115215942.862":
+  entity tb_tz_vid_008_shape_gen at 1( 0) + 0 on 6799;
+  architecture sim of tb_tz_vid_008_shape_gen at 9( 157) + 0 on 6800;
+file . "tz-05-vid/tz_vid_007_framebuf/tb/tb_tz_vid_007_framebuf.vhd" "e437e09b5261e8d0f6b5973a3ce7d1097264863b" "20261115215942.218":
+  entity tb_tz_vid_007_framebuf at 1( 0) + 0 on 6795;
+  architecture sim of tb_tz_vid_007_framebuf at 9( 156) + 0 on 6796;
+file . "tz-05-vid/tz_vid_006_2d_gfx/tb/tb_tz_vid_006_2d_gfx.vhd" "93945c125fc31d7dd289314047a5ae8bff4a468e" "20261115215941.351":
+  entity tb_tz_vid_006_2d_gfx at 1( 0) + 0 on 6791;
+  architecture sim of tb_tz_vid_006_2d_gfx at 9( 154) + 0 on 6792;
+file . "tz-05-vid/tz_vid_005_led_mat/tb/tb_tz_vid_005_led_mat.vhd" "1a8276cdc4afa4fb86a371414aea5d1445f6ad33" "20261115215940.718":
+  entity tb_tz_vid_005_led_mat at 1( 0) + 0 on 6787;
+  architecture sim of tb_tz_vid_005_led_mat at 9( 155) + 0 on 6788;
+file . "tz-05-vid/tz_vid_004_oled/tb/tb_tz_vid_004_oled.vhd" "f9888d1b9fe3c8b1aca680565356be17d694a21c" "20261115215940.078":
+  entity tb_tz_vid_004_oled at 1( 0) + 0 on 6783;
+  architecture sim of tb_tz_vid_004_oled at 9( 152) + 0 on 6784;
+file . "tz-05-vid/tz_vid_003_lcd/tb/tb_tz_vid_003_lcd.vhd" "7bd56ce3286bc82be6ea5c684d02aae47401a0c5" "20261115215939.458":
+  entity tb_tz_vid_003_lcd at 1( 0) + 0 on 6779;
+  architecture sim of tb_tz_vid_003_lcd at 9( 151) + 0 on 6780;
+file . "tz-05-vid/tz_vid_002_char_gen/tb/tb_tz_vid_002_char_gen.vhd" "d5b0424bac8a32b67bd7a2f4df10978f1f72a2ec" "20261115215938.675":
+  entity tb_tz_vid_002_char_gen at 1( 0) + 0 on 6775;
+  architecture sim of tb_tz_vid_002_char_gen at 9( 156) + 0 on 6776;
+file . "tz-05-vid/tz_vid_001_vga/tb/tb_tz_vid_001_vga.vhd" "9a2307452557f87b6fc13b205dca1112510e1e0d" "20261115215938.019":
+  entity tb_tz_vid_001_vga at 1( 0) + 0 on 6771;
+  architecture sim of tb_tz_vid_001_vga at 9( 151) + 0 on 6772;
+file . "tz-04-aqd/tz_aqd_010_timestamp/tb/tb_tz_aqd_010_timestamp.vhd" "5ab63a08e2b7e43f6d0276a62dde9f65714a4444" "20261115215937.405":
+  entity tb_tz_aqd_010_timestamp at 1( 0) + 0 on 6767;
+  architecture sim of tb_tz_aqd_010_timestamp at 9( 157) + 0 on 6768;
+file . "tz-04-aqd/tz_aqd_009_multi_acq/tb/tb_tz_aqd_009_multi_acq.vhd" "0f7994d96b5fd28b65c451556fdc682d4d1493b7" "20261115215936.792":
+  entity tb_tz_aqd_009_multi_acq at 1( 0) + 0 on 6763;
+  architecture sim of tb_tz_aqd_009_multi_acq at 9( 157) + 0 on 6764;
+file . "tz-04-aqd/tz_aqd_008_duty_meter/tb/tb_tz_aqd_008_duty_meter.vhd" "741f14350e8555500ded4d8c23596f52009437fd" "20261115215936.141":
+  entity tb_tz_aqd_008_duty_meter at 1( 0) + 0 on 6759;
+  architecture sim of tb_tz_aqd_008_duty_meter at 9( 158) + 0 on 6760;
+file . "tz-04-aqd/tz_aqd_007_per_meter/tb/tb_tz_aqd_007_per_meter.vhd" "eecae637a6f9fbe4a01cf81d84c9ec1bf3baf920" "20261115215935.393":
+  entity tb_tz_aqd_007_per_meter at 1( 0) + 0 on 6755;
+  architecture sim of tb_tz_aqd_007_per_meter at 9( 157) + 0 on 6756;
+file . "tz-04-aqd/tz_aqd_006_freq_meter/tb/tb_tz_aqd_006_freq_meter.vhd" "cdc9ef9934f3493e27332d7655ed013954082a72" "20261115215934.792":
+  entity tb_tz_aqd_006_freq_meter at 1( 0) + 0 on 6751;
+  architecture sim of tb_tz_aqd_006_freq_meter at 9( 158) + 0 on 6752;
+file . "tz-04-aqd/tz_aqd_005_pulse_cap/tb/tb_tz_aqd_005_pulse_cap.vhd" "f8aa86fa18dd722c48a3bef77c8c1a48c8d414b5" "20261115215934.078":
+  entity tb_tz_aqd_005_pulse_cap at 1( 0) + 0 on 6747;
+  architecture sim of tb_tz_aqd_005_pulse_cap at 9( 157) + 0 on 6748;
+file . "tz-04-aqd/tz_aqd_004_ana_acq/tb/tb_tz_aqd_004_ana_acq.vhd" "c95ffaeb9d31af8294fff1ca9e43ff2ce87f8762" "20261115215933.315":
+  entity tb_tz_aqd_004_ana_acq at 1( 0) + 0 on 6743;
+  architecture sim of tb_tz_aqd_004_ana_acq at 9( 155) + 0 on 6744;
+file . "tz-04-aqd/tz_aqd_003_dig_sensor/tb/tb_tz_aqd_003_dig_sensor.vhd" "ba920fbc92884a3a0fe7c4df66e00345863d4e29" "20261115215932.658":
+  entity tb_tz_aqd_003_dig_sensor at 1( 0) + 0 on 6739;
+  architecture sim of tb_tz_aqd_003_dig_sensor at 9( 158) + 0 on 6740;
+file . "tz-04-aqd/tz_aqd_002_dac/tb/tb_tz_aqd_002_dac.vhd" "5a72871a680bd8f65e05118513590bc427a416d4" "20261115215931.914":
+  entity tb_tz_aqd_002_dac at 1( 0) + 0 on 6735;
+  architecture sim of tb_tz_aqd_002_dac at 9( 151) + 0 on 6736;
+file . "tz-04-aqd/tz_aqd_001_adc/tb/tb_tz_aqd_001_adc.vhd" "46332faa5f133eecdeb8840721bfe447f2815209" "20261115215931.334":
+  entity tb_tz_aqd_001_adc at 1( 0) + 0 on 6731;
+  architecture sim of tb_tz_aqd_001_adc at 9( 151) + 0 on 6732;
+file . "tz-03-ctl/tz_ctl_010_counter/tb/tb_tz_ctl_010_counter.vhd" "5f1e90bd17123d96771d0273c8561683c5b8e7bc" "20261115215930.667":
+  entity tb_tz_ctl_010_counter at 1( 0) + 0 on 6727;
+  architecture sim of tb_tz_ctl_010_counter at 9( 155) + 0 on 6728;
+file . "tz-03-ctl/tz_ctl_009_watchdog/tb/tb_tz_ctl_009_watchdog.vhd" "a9abc6f6b792a98881c76913d43d5c235f506bb7" "20261115215930.066":
+  entity tb_tz_ctl_009_watchdog at 1( 0) + 0 on 6723;
+  architecture sim of tb_tz_ctl_009_watchdog at 9( 156) + 0 on 6724;
+file . "tz-03-ctl/tz_ctl_008_pid/tb/tb_tz_ctl_008_pid.vhd" "dd1a7351207bef1e07ea8b8739ecd5f48e0229f1" "20261115215929.413":
+  entity tb_tz_ctl_008_pid at 1( 0) + 0 on 6719;
+  architecture sim of tb_tz_ctl_008_pid at 9( 151) + 0 on 6720;
+file . "tz-03-ctl/tz_ctl_007_encoder/tb/tb_tz_ctl_007_encoder.vhd" "fd2e889b5e1b512798cab9835aa8f0810e03c97b" "20261115215928.796":
+  entity tb_tz_ctl_007_encoder at 1( 0) + 0 on 6715;
+  architecture sim of tb_tz_ctl_007_encoder at 9( 155) + 0 on 6716;
+file . "tz-03-ctl/tz_ctl_006_servo/tb/tb_tz_ctl_006_servo.vhd" "44da1c6aa0120e577d4129d36e16cb92dbbcba38" "20261115215928.160":
+  entity tb_tz_ctl_006_servo at 1( 0) + 0 on 6711;
+  architecture sim of tb_tz_ctl_006_servo at 9( 153) + 0 on 6712;
+file . "tz-03-ctl/tz_ctl_005_stepper/tb/tb_tz_ctl_005_stepper.vhd" "0fe83b6b7ba730af9a9f25993d82cb0879f1fbc9" "20261115215927.478":
+  entity tb_tz_ctl_005_stepper at 1( 0) + 0 on 6707;
+  architecture sim of tb_tz_ctl_005_stepper at 9( 155) + 0 on 6708;
+file . "tz-03-ctl/tz_ctl_004_dc_motor/tb/tb_tz_ctl_004_dc_motor.vhd" "d7945652d5e68d662c671b695a043b8290203086" "20261115215926.904":
+  entity tb_tz_ctl_004_dc_motor at 1( 0) + 0 on 6703;
+  architecture sim of tb_tz_ctl_004_dc_motor at 9( 156) + 0 on 6704;
+file . "tz-03-ctl/tz_ctl_003_dead_time/tb/tb_tz_ctl_003_dead_time.vhd" "26f0638114da6fae8107e5e32961630c07c65604" "20261115215926.315":
+  entity tb_tz_ctl_003_dead_time at 1( 0) + 0 on 6699;
+  architecture sim of tb_tz_ctl_003_dead_time at 9( 157) + 0 on 6700;
+file . "tz-03-ctl/tz_ctl_002_comp_pwm/tb/tb_tz_ctl_002_comp_pwm.vhd" "e3d29a05ff8e34e4fb7446740d648cd75e64b12b" "20261115215925.702":
+  entity tb_tz_ctl_002_comp_pwm at 1( 0) + 0 on 6695;
+  architecture sim of tb_tz_ctl_002_comp_pwm at 9( 156) + 0 on 6696;
+file . "tz-03-ctl/tz_ctl_001_pwm/tb/tb_tz_ctl_001_pwm.vhd" "f0896195e8b7c692a171cfd9faf7abdd5e697b62" "20261115215925.121":
+  entity tb_tz_ctl_001_pwm at 1( 0) + 0 on 6691;
+  architecture sim of tb_tz_ctl_001_pwm at 9( 151) + 0 on 6692;
+file . "tz-02-com/tz_com_010_usb/tb/tb_tz_com_010_usb.vhd" "18df620c77b513cea5b36d18cc403a8a059aad52" "20261115215924.506":
+  entity tb_tz_com_010_usb at 1( 0) + 0 on 6687;
+  architecture sim of tb_tz_com_010_usb at 9( 151) + 0 on 6688;
+file . "tz-02-com/tz_com_009_eth_mac/tb/tb_tz_com_009_eth_mac.vhd" "5d33ede080d28c63f814792fbb789c1dbee28f91" "20261115215923.953":
+  entity tb_tz_com_009_eth_mac at 1( 0) + 0 on 6683;
+  architecture sim of tb_tz_com_009_eth_mac at 9( 155) + 0 on 6684;
+file . "tz-02-com/tz_com_008_modbus/tb/tb_tz_com_008_modbus.vhd" "155a1a22d6be3a536a07142d8d96e25c68aaeada" "20261115215923.370":
+  entity tb_tz_com_008_modbus at 1( 0) + 0 on 6679;
+  architecture sim of tb_tz_com_008_modbus at 9( 154) + 0 on 6680;
+file . "tz-02-com/tz_com_007_can/tb/tb_tz_com_007_can.vhd" "d6e3a142b3430d356af46110e53ee001f28ea364" "20261115215922.737":
+  entity tb_tz_com_007_can at 1( 0) + 0 on 6675;
+  architecture sim of tb_tz_com_007_can at 9( 151) + 0 on 6676;
+file . "tz-02-com/tz_com_006_i2s/tb/tb_tz_com_006_i2s.vhd" "6fe14e33905c28afd3d5972ac4447611ac96e7cf" "20261115215922.183":
+  entity tb_tz_com_006_i2s at 1( 0) + 0 on 6671;
+  architecture sim of tb_tz_com_006_i2s at 9( 151) + 0 on 6672;
+file . "tz-02-com/tz_com_005_i2c_slave/tb/tb_tz_com_005_i2c_slave.vhd" "bc209a5460eddb4dacdd1323db0e5d4e185b4d9d" "20261115215921.625":
+  entity tb_tz_com_005_i2c_slave at 1( 0) + 0 on 6667;
+  architecture sim of tb_tz_com_005_i2c_slave at 9( 157) + 0 on 6668;
+file . "tz-02-com/tz_com_004_i2c_master/tb/tb_tz_com_004_i2c_master.vhd" "88dc845835f8c3b6e66acbfedc4c1d12b37d217a" "20261115215921.042":
+  entity tb_tz_com_004_i2c_master at 1( 0) + 0 on 6663;
+  architecture sim of tb_tz_com_004_i2c_master at 9( 158) + 0 on 6664;
+file . "tz-02-com/tz_com_003_spi_slave/tb/tb_tz_com_003_spi_slave.vhd" "012da6be97f82fdda801acfe468df8e180a58949" "20261115215920.430":
+  entity tb_tz_com_003_spi_slave at 1( 0) + 0 on 6659;
+  architecture sim of tb_tz_com_003_spi_slave at 9( 157) + 0 on 6660;
+file . "tz-02-com/tz_com_002_spi_master/tb/tb_tz_com_002_spi_master.vhd" "6addf3c63904273c3d85b6258460c71c54d64027" "20261115215919.886":
+  entity tb_tz_com_002_spi_master at 1( 0) + 0 on 6655;
+  architecture sim of tb_tz_com_002_spi_master at 9( 158) + 0 on 6656;
+file . "tz-02-com/tz_com_001_uart/tb/tb_tz_com_001_uart.vhd" "7d4a3c52b371fdf1b4529b27d8e9f30a870efdb1" "20261115215919.350":
+  entity tb_tz_com_001_uart at 1( 0) + 0 on 6651;
+  architecture sim of tb_tz_com_001_uart at 9( 152) + 0 on 6652;
+file . "tz-00-hub/operador-meec/hdl/operador_meec_hub.vhd" "255a2e9dc2af81cf6ac8a434a867b3940153c925" "20261115215913.667":
+  entity operador_meec_hub at 1( 0) + 0 on 6607;
+  architecture rtl of operador_meec_hub at 24( 772) + 0 on 6608;
+file . "tz-00-hub/t-link/hdl/tusitec_tlink_pkg.vhd" "a3dda9ec6459c54c9ff4ae1bbe58113d00e2eab4" "20261115215913.553":
+  package tusitec_tlink_pkg at 1( 0) + 0 on 6606;
+file . "tz-01-log/tz_log_001_mux/rtl/tz_log_001_mux.vhd" "2d635b378b9d609f598e603365f2357da85c5e8f" "20261115215913.796":
+  entity tz_log_001_mux at 1( 0) + 0 on 6609;
+  architecture rtl of tz_log_001_mux at 22( 574) + 0 on 6610;
+file . "tz-02-com/tz_com_001_uart/rtl/tz_com_001_uart.vhd" "07fa906dbb8ff0cf92c9554122d239e21c75e6a6" "20261115215919.170":
+  entity tz_com_001_uart at 1( 0) + 0 on 6649;
+  architecture rtl of tz_com_001_uart at 18( 436) + 0 on 6650;
+file . "tz-02-com/tz_com_002_spi_master/rtl/tz_com_002_spi_master.vhd" "4f5a37d95f1b5ff6bc0fabd9dec959314d2eeae5" "20261115215919.750":
+  entity tz_com_002_spi_master at 1( 0) + 0 on 6653;
+  architecture rtl of tz_com_002_spi_master at 20( 507) + 0 on 6654;
+file . "tz-02-com/tz_com_003_spi_slave/rtl/tz_com_003_spi_slave.vhd" "9d52af2ec7ed3124c9597951860e5133bab4eafb" "20261115215920.267":
+  entity tz_com_003_spi_slave at 1( 0) + 0 on 6657;
+  architecture rtl of tz_com_003_spi_slave at 20( 504) + 0 on 6658;
+file . "tz-02-com/tz_com_004_i2c_master/rtl/tz_com_004_i2c_master.vhd" "4829c9ad47573c1b3ff2b4af288716d30d302071" "20261115215920.893":
+  entity tz_com_004_i2c_master at 1( 0) + 0 on 6661;
+  architecture rtl of tz_com_004_i2c_master at 18( 449) + 0 on 6662;
+file . "tz-02-com/tz_com_005_i2c_slave/rtl/tz_com_005_i2c_slave.vhd" "1cc18e36fa0636a56326b4e1b2bf53214273f118" "20261115215921.480":
+  entity tz_com_005_i2c_slave at 1( 0) + 0 on 6665;
+  architecture rtl of tz_com_005_i2c_slave at 18( 448) + 0 on 6666;
+file . "tz-02-com/tz_com_006_i2s/rtl/tz_com_006_i2s.vhd" "a258900b1773332d827aa3053f132bf84313e405" "20261115215922.044":
+  entity tz_com_006_i2s at 1( 0) + 0 on 6669;
+  architecture rtl of tz_com_006_i2s at 19( 473) + 0 on 6670;
+file . "tz-02-com/tz_com_007_can/rtl/tz_com_007_can.vhd" "6c25ba2eb6a95a5e8bb027de2e2153481b5579bb" "20261115215922.604":
+  entity tz_com_007_can at 1( 0) + 0 on 6673;
+  architecture rtl of tz_com_007_can at 18( 443) + 0 on 6674;
+file . "tz-02-com/tz_com_008_modbus/rtl/tz_com_008_modbus.vhd" "f3b2f86a224508e852c8a0395764c515fa7eff33" "20261115215923.214":
+  entity tz_com_008_modbus at 1( 0) + 0 on 6677;
+  architecture rtl of tz_com_008_modbus at 19( 485) + 0 on 6678;
+file . "tz-02-com/tz_com_009_eth_mac/rtl/tz_com_009_eth_mac.vhd" "909f56dd1092de94f54c47dce70152343fd89c17" "20261115215923.792":
+  entity tz_com_009_eth_mac at 1( 0) + 0 on 6681;
+  architecture rtl of tz_com_009_eth_mac at 20( 542) + 0 on 6682;
+file . "tz-02-com/tz_com_010_usb/rtl/tz_com_010_usb.vhd" "b0b3dc63b1c54377753403d0e072eae1941a894a" "20261115215924.367":
+  entity tz_com_010_usb at 1( 0) + 0 on 6685;
+  architecture rtl of tz_com_010_usb at 18( 440) + 0 on 6686;
+file . "tz-03-ctl/tz_ctl_001_pwm/rtl/tz_ctl_001_pwm.vhd" "7216aee03dda20888b79a04b0be46965355c9aae" "20261115215924.973":
+  entity tz_ctl_001_pwm at 1( 0) + 0 on 6689;
+  architecture rtl of tz_ctl_001_pwm at 17( 412) + 0 on 6690;
+file . "tz-03-ctl/tz_ctl_002_comp_pwm/rtl/tz_ctl_002_comp_pwm.vhd" "d2f5aedecd0290176b9aeddda77a29258c419e9d" "20261115215925.534":
+  entity tz_ctl_002_comp_pwm at 1( 0) + 0 on 6693;
+  architecture rtl of tz_ctl_002_comp_pwm at 18( 447) + 0 on 6694;
+file . "tz-03-ctl/tz_ctl_003_dead_time/rtl/tz_ctl_003_dead_time.vhd" "22a87609d0e8808752cec7df0935d11d7022d56c" "20261115215926.161":
+  entity tz_ctl_003_dead_time at 1( 0) + 0 on 6697;
+  architecture rtl of tz_ctl_003_dead_time at 19( 480) + 0 on 6698;
+file . "tz-03-ctl/tz_ctl_004_dc_motor/rtl/tz_ctl_004_dc_motor.vhd" "eeafcc54edae3bde1c04e5e189dbfe5c363d6e2c" "20261115215926.735":
+  entity tz_ctl_004_dc_motor at 1( 0) + 0 on 6701;
+  architecture rtl of tz_ctl_004_dc_motor at 19( 474) + 0 on 6702;
+file . "tz-03-ctl/tz_ctl_005_stepper/rtl/tz_ctl_005_stepper.vhd" "73c46cb5b9fd291f0e5d1b787e44063beb8f9900" "20261115215927.323":
+  entity tz_ctl_005_stepper at 1( 0) + 0 on 6705;
+  architecture rtl of tz_ctl_005_stepper at 18( 451) + 0 on 6706;
+file . "tz-03-ctl/tz_ctl_006_servo/rtl/tz_ctl_006_servo.vhd" "a734560a59c7059ca68efbe017fbba0539a66b0d" "20261115215927.960":
+  entity tz_ctl_006_servo at 1( 0) + 0 on 6709;
+  architecture rtl of tz_ctl_006_servo at 17( 416) + 0 on 6710;
+file . "tz-03-ctl/tz_ctl_007_encoder/rtl/tz_ctl_007_encoder.vhd" "2dd9651c9b4a443f3063ae09261d2cd7593123b1" "20261115215928.634":
+  entity tz_ctl_007_encoder at 1( 0) + 0 on 6713;
+  architecture rtl of tz_ctl_007_encoder at 18( 444) + 0 on 6714;
+file . "tz-03-ctl/tz_ctl_008_pid/rtl/tz_ctl_008_pid.vhd" "cc90d4b9e7bbe1c9ef2e21bf1332cbe7b8328791" "20261115215929.263":
+  entity tz_ctl_008_pid at 1( 0) + 0 on 6717;
+  architecture rtl of tz_ctl_008_pid at 18( 520) + 0 on 6718;
+file . "tz-03-ctl/tz_ctl_009_watchdog/rtl/tz_ctl_009_watchdog.vhd" "e8dadc4d8bbd6291aa2edd65cdf400165995c198" "20261115215929.910":
+  entity tz_ctl_009_watchdog at 1( 0) + 0 on 6721;
+  architecture rtl of tz_ctl_009_watchdog at 17( 416) + 0 on 6722;
+file . "tz-03-ctl/tz_ctl_010_counter/rtl/tz_ctl_010_counter.vhd" "8c51cce73d8c73529daad70e826feac99ba3ef35" "20261115215930.527":
+  entity tz_ctl_010_counter at 1( 0) + 0 on 6725;
+  architecture rtl of tz_ctl_010_counter at 18( 452) + 0 on 6726;
+file . "tz-04-aqd/tz_aqd_001_adc/rtl/tz_aqd_001_adc.vhd" "ecf95e5c5eb2d823121177f9516ef7e23c12a2b7" "20261115215931.167":
+  entity tz_aqd_001_adc at 1( 0) + 0 on 6729;
+  architecture rtl of tz_aqd_001_adc at 16( 363) + 0 on 6730;
+file . "tz-04-aqd/tz_aqd_002_dac/rtl/tz_aqd_002_dac.vhd" "e6ecb4d9014d768a84538bb643486a62a232a2c6" "20261115215931.764":
+  entity tz_aqd_002_dac at 1( 0) + 0 on 6733;
+  architecture rtl of tz_aqd_002_dac at 17( 432) + 0 on 6734;
+file . "tz-04-aqd/tz_aqd_003_dig_sensor/rtl/tz_aqd_003_dig_sensor.vhd" "539d78480a9fa650e5dbceecb22ca4d542b8afc4" "20261115215932.427":
+  entity tz_aqd_003_dig_sensor at 1( 0) + 0 on 6737;
+  architecture rtl of tz_aqd_003_dig_sensor at 16( 353) + 0 on 6738;
+file . "tz-04-aqd/tz_aqd_004_ana_acq/rtl/tz_aqd_004_ana_acq.vhd" "7533b14cf7a5033f2b305b8b51d650287724d12d" "20261115215933.141":
+  entity tz_aqd_004_ana_acq at 1( 0) + 0 on 6741;
+  architecture rtl of tz_aqd_004_ana_acq at 18( 473) + 0 on 6742;
+file . "tz-04-aqd/tz_aqd_005_pulse_cap/rtl/tz_aqd_005_pulse_cap.vhd" "3e34ffbc639d3c3296c7c74e77c233a8d391ff3e" "20261115215933.921":
+  entity tz_aqd_005_pulse_cap at 1( 0) + 0 on 6745;
+  architecture rtl of tz_aqd_005_pulse_cap at 16( 351) + 0 on 6746;
+file . "tz-04-aqd/tz_aqd_006_freq_meter/rtl/tz_aqd_006_freq_meter.vhd" "873c8e08f69d8be56de764455a421dd459a2e663" "20261115215934.637":
+  entity tz_aqd_006_freq_meter at 1( 0) + 0 on 6749;
+  architecture rtl of tz_aqd_006_freq_meter at 16( 350) + 0 on 6750;
+file . "tz-04-aqd/tz_aqd_007_per_meter/rtl/tz_aqd_007_per_meter.vhd" "d74ac468febf1eb08bb77442580dc99a5609b483" "20261115215935.240":
+  entity tz_aqd_007_per_meter at 1( 0) + 0 on 6753;
+  architecture rtl of tz_aqd_007_per_meter at 16( 349) + 0 on 6754;
+file . "tz-04-aqd/tz_aqd_008_duty_meter/rtl/tz_aqd_008_duty_meter.vhd" "5a79df1c580c90cb26df96f47e6692b42fbf006d" "20261115215935.901":
+  entity tz_aqd_008_duty_meter at 1( 0) + 0 on 6757;
+  architecture rtl of tz_aqd_008_duty_meter at 16( 350) + 0 on 6758;
+file . "tz-04-aqd/tz_aqd_009_multi_acq/rtl/tz_aqd_009_multi_acq.vhd" "bba1029c6d55c085af386c93ab449bfbd384257e" "20261115215936.628":
+  entity tz_aqd_009_multi_acq at 1( 0) + 0 on 6761;
+  architecture rtl of tz_aqd_009_multi_acq at 18( 488) + 0 on 6762;
+file . "tz-04-aqd/tz_aqd_010_timestamp/rtl/tz_aqd_010_timestamp.vhd" "be91d23f5028fe9d99c6789d55ed980c2203473f" "20261115215937.259":
+  entity tz_aqd_010_timestamp at 1( 0) + 0 on 6765;
+  architecture rtl of tz_aqd_010_timestamp at 16( 351) + 0 on 6766;
+file . "tz-05-vid/tz_vid_001_vga/rtl/tz_vid_001_vga.vhd" "8ad2d13bec3487c7887922cbd141d007bc4ff0f9" "20261115215937.866":
+  entity tz_vid_001_vga at 1( 0) + 0 on 6769;
+  architecture rtl of tz_vid_001_vga at 19( 492) + 0 on 6770;
+file . "tz-05-vid/tz_vid_002_char_gen/rtl/tz_vid_002_char_gen.vhd" "7f10355befc82f10aac523e8ba889a09aca1e6c6" "20261115215938.480":
+  entity tz_vid_002_char_gen at 1( 0) + 0 on 6773;
+  architecture rtl of tz_vid_002_char_gen at 18( 473) + 0 on 6774;
+file . "tz-05-vid/tz_vid_003_lcd/rtl/tz_vid_003_lcd.vhd" "4a19df55dc931ea81b9e4ac3710b06d1e636e8ef" "20261115215939.122":
+  entity tz_vid_003_lcd at 1( 0) + 0 on 6777;
+  architecture rtl of tz_vid_003_lcd at 19( 498) + 0 on 6778;
+file . "tz-05-vid/tz_vid_004_oled/rtl/tz_vid_004_oled.vhd" "e6128a477cd6435574180d23342c74f405d5ba5c" "20261115215939.926":
+  entity tz_vid_004_oled at 1( 0) + 0 on 6781;
+  architecture rtl of tz_vid_004_oled at 20( 517) + 0 on 6782;
+file . "tz-05-vid/tz_vid_005_led_mat/rtl/tz_vid_005_led_mat.vhd" "791bd93a03933ee2815041a75954660cd9750394" "20261115215940.553":
+  entity tz_vid_005_led_mat at 1( 0) + 0 on 6785;
+  architecture rtl of tz_vid_005_led_mat at 18( 489) + 0 on 6786;
+file . "tz-05-vid/tz_vid_006_2d_gfx/rtl/tz_vid_006_2d_gfx.vhd" "36dd2246a74a6ee3853097166f1468616814f70b" "20261115215941.170":
+  entity tz_vid_006_2d_gfx at 1( 0) + 0 on 6789;
+  architecture rtl of tz_vid_006_2d_gfx at 19( 543) + 0 on 6790;
+file . "tz-05-vid/tz_vid_007_framebuf/rtl/tz_vid_007_framebuf.vhd" "e901052ca87d6b33ddb80cb71963211c71bad225" "20261115215942.054":
+  entity tz_vid_007_framebuf at 1( 0) + 0 on 6793;
+  architecture rtl of tz_vid_007_framebuf at 18( 488) + 0 on 6794;
+file . "tz-05-vid/tz_vid_008_shape_gen/rtl/tz_vid_008_shape_gen.vhd" "4beaec24d23a208199d6882c49308a58d3cd95c9" "20261115215942.673":
+  entity tz_vid_008_shape_gen at 1( 0) + 0 on 6797;
+  architecture rtl of tz_vid_008_shape_gen at 17( 420) + 0 on 6798;
+file . "tz-05-vid/tz_vid_009_hdmi/rtl/tz_vid_009_hdmi.vhd" "62b4c64881047b0da8f898492bad90f1a4f1ecac" "20261115215943.360":
+  entity tz_vid_009_hdmi at 1( 0) + 0 on 6801;
+  architecture rtl of tz_vid_009_hdmi at 20( 516) + 0 on 6802;
+file . "tz-05-vid/tz_vid_010_pix_fmt/rtl/tz_vid_010_pix_fmt.vhd" "d2ccd81d14f0c5ff37e99ffff16ff4a7b9bed28f" "20261115215943.958":
+  entity tz_vid_010_pix_fmt at 1( 0) + 0 on 6805;
+  architecture rtl of tz_vid_010_pix_fmt at 18( 487) + 0 on 6806;
+file . "tz-06-dsp/tz_dsp_001_fir/rtl/tz_dsp_001_fir.vhd" "1bfd7288873f33af58a7d73795f24daf6458706c" "20261115215944.588":
+  entity tz_dsp_001_fir at 1( 0) + 0 on 6809;
+  architecture rtl of tz_dsp_001_fir at 18( 480) + 0 on 6810;
+file . "tz-06-dsp/tz_dsp_002_iir/rtl/tz_dsp_002_iir.vhd" "1d29a4589ca752829ddf783957946da1af1f92f3" "20261115215945.336":
+  entity tz_dsp_002_iir at 1( 0) + 0 on 6813;
+  architecture rtl of tz_dsp_002_iir at 18( 480) + 0 on 6814;
+file . "tz-06-dsp/tz_dsp_003_fft/rtl/tz_dsp_003_fft.vhd" "470c7a897e14384d069cf07393d30b092fbb8ffc" "20261115215945.929":
+  entity tz_dsp_003_fft at 1( 0) + 0 on 6817;
+  architecture rtl of tz_dsp_003_fft at 20( 594) + 0 on 6818;
+file . "tz-06-dsp/tz_dsp_004_ifft/rtl/tz_dsp_004_ifft.vhd" "41b10ce4716a50250a85b9e55826f113a108fb84" "20261115215946.807":
+  entity tz_dsp_004_ifft at 1( 0) + 0 on 6821;
+  architecture rtl of tz_dsp_004_ifft at 20( 595) + 0 on 6822;
+file . "tz-06-dsp/tz_dsp_005_mac/rtl/tz_dsp_005_mac.vhd" "2c0e1b38ba26ade540bcf2686fba52f82833ddf2" "20261115215947.460":
+  entity tz_dsp_005_mac at 1( 0) + 0 on 6825;
+  architecture rtl of tz_dsp_005_mac at 19( 532) + 0 on 6826;
+file . "tz-06-dsp/tz_dsp_006_dds/rtl/tz_dsp_006_dds.vhd" "fd506b6ab2d26289d1ee41d0ad748e3649d9609d" "20261115215948.095":
+  entity tz_dsp_006_dds at 1( 0) + 0 on 6829;
+  architecture rtl of tz_dsp_006_dds at 18( 488) + 0 on 6830;
+file . "tz-06-dsp/tz_dsp_007_cordic/rtl/tz_dsp_007_cordic.vhd" "f4f2666ae95987cbcdb1995ee4f171f6f6359038" "20261115215948.701":
+  entity tz_dsp_007_cordic at 1( 0) + 0 on 6833;
+  architecture rtl of tz_dsp_007_cordic at 19( 543) + 0 on 6834;
+file . "tz-06-dsp/tz_dsp_008_freq_det/rtl/tz_dsp_008_freq_det.vhd" "7bc44818a24334d0a9a7f28e798b60353acbec59" "20261115215949.363":
+  entity tz_dsp_008_freq_det at 1( 0) + 0 on 6837;
+  architecture rtl of tz_dsp_008_freq_det at 18( 470) + 0 on 6838;
+file . "tz-06-dsp/tz_dsp_009_modulator/rtl/tz_dsp_009_modulator.vhd" "bbf5d5eace831886d5720d627684d5192fc08339" "20261115215950.052":
+  entity tz_dsp_009_modulator at 1( 0) + 0 on 6841;
+  architecture rtl of tz_dsp_009_modulator at 19( 546) + 0 on 6842;
+file . "tz-06-dsp/tz_dsp_010_demodulator/rtl/tz_dsp_010_demodulator.vhd" "e2d55dd315daf201f7274769e734d4214a63112d" "20261115215950.686":
+  entity tz_dsp_010_demodulator at 1( 0) + 0 on 6845;
+  architecture rtl of tz_dsp_010_demodulator at 19( 549) + 0 on 6846;
+file . "tz-07-mem/tz_mem_001_ram/rtl/tz_mem_001_ram.vhd" "0091c2a917a092ee438b1e70953b8b6bec83394c" "20261115215951.871":
+  entity tz_mem_001_ram at 1( 0) + 0 on 6849;
+  architecture rtl of tz_mem_001_ram at 19( 506) + 0 on 6850;
+file . "tz-07-mem/tz_mem_002_rom/rtl/tz_mem_002_rom.vhd" "01473582dc554fc3c3d3a310ead3ce147a265fe4" "20261115215952.545":
+  entity tz_mem_002_rom at 1( 0) + 0 on 6853;
+  architecture rtl of tz_mem_002_rom at 18( 478) + 0 on 6854;
+file . "tz-07-mem/tz_mem_003_sync_fifo/rtl/tz_mem_003_sync_fifo.vhd" "1ed8612c85c56a5ff43616d23e8617d4a3c4c480" "20261115215953.252":
+  entity tz_mem_003_sync_fifo at 1( 0) + 0 on 6857;
+  architecture rtl of tz_mem_003_sync_fifo at 21( 560) + 0 on 6858;
+file . "tz-07-mem/tz_mem_004_async_fifo/rtl/tz_mem_004_async_fifo.vhd" "8b7362445109b534a5c450c88fc50b3904b8876b" "20261115215953.985":
+  entity tz_mem_004_async_fifo at 1( 0) + 0 on 6861;
+  architecture rtl of tz_mem_004_async_fifo at 20( 530) + 0 on 6862;
+file . "tz-07-mem/tz_mem_005_sram/rtl/tz_mem_005_sram.vhd" "d8e60ffaf97f26d7504280fecf952b6af2c56ba6" "20261115215954.638":
+  entity tz_mem_005_sram at 1( 0) + 0 on 6865;
+  architecture rtl of tz_mem_005_sram at 21( 599) + 0 on 6866;
+file . "tz-07-mem/tz_mem_006_sdram/rtl/tz_mem_006_sdram.vhd" "c4d76a828188f1df6524599fbd77f8b3b2a9eaf6" "20261115215955.252":
+  entity tz_mem_006_sdram at 1( 0) + 0 on 6869;
+  architecture rtl of tz_mem_006_sdram at 23( 659) + 0 on 6870;
+file . "tz-07-mem/tz_mem_007_ddr/rtl/tz_mem_007_ddr.vhd" "385af2d895e47da09f80591b1ceb7e9b4b3453b1" "20261115215955.915":
+  entity tz_mem_007_ddr at 1( 0) + 0 on 6873;
+  architecture rtl of tz_mem_007_ddr at 20( 515) + 0 on 6874;
+file . "tz-07-mem/tz_mem_008_spi_flash/rtl/tz_mem_008_spi_flash.vhd" "b71f4fb6db7ad228322846c768588bc5386351e8" "20261115215956.545":
+  entity tz_mem_008_spi_flash at 1( 0) + 0 on 6877;
+  architecture rtl of tz_mem_008_spi_flash at 20( 530) + 0 on 6878;
+file . "tz-07-mem/tz_mem_009_sd_card/rtl/tz_mem_009_sd_card.vhd" "c0be90a7d3aa93cb8249abbf77af326e49fcc42d" "20261115215957.190":
+  entity tz_mem_009_sd_card at 1( 0) + 0 on 6881;
+  architecture rtl of tz_mem_009_sd_card at 19( 504) + 0 on 6882;
+file . "tz-07-mem/tz_mem_010_dma/rtl/tz_mem_010_dma.vhd" "f7cbcd28c510c3cc426115d13c736968ad067426" "20261115215957.822":
+  entity tz_mem_010_dma at 1( 0) + 0 on 6885;
+  architecture rtl of tz_mem_010_dma at 19( 499) + 0 on 6886;
+file . "tz-08-sys/tz_sys_001_softcore/rtl/tz_sys_001_softcore.vhd" "b1f362b6abcde77a207773d1d656cb450eccd2d0" "20261115215958.518":
+  entity tz_sys_001_softcore at 1( 0) + 0 on 6889;
+  architecture rtl of tz_sys_001_softcore at 18( 496) + 0 on 6890;
+file . "tz-08-sys/tz_sys_002_riscv/rtl/tz_sys_002_riscv.vhd" "c20647fb97bc261f65f7e271f99aaed831c5be88" "20261115215959.217":
+  entity tz_sys_002_riscv at 1( 0) + 0 on 6893;
+  architecture rtl of tz_sys_002_riscv at 18( 484) + 0 on 6894;
+file . "tz-08-sys/tz_sys_003_int_ctrl/rtl/tz_sys_003_int_ctrl.vhd" "275d882ac9afbfc8414f8994358abc653856c08a" "20261115220000.102":
+  entity tz_sys_003_int_ctrl at 1( 0) + 0 on 6897;
+  architecture rtl of tz_sys_003_int_ctrl at 18( 471) + 0 on 6898;
+file . "tz-08-sys/tz_sys_004_int_bus/rtl/tz_sys_004_int_bus.vhd" "b9920ac6ed21d9c36126728f5439df4b6acf8d71" "20261115220001.368":
+  entity tz_sys_004_int_bus at 1( 0) + 0 on 6901;
+  architecture rtl of tz_sys_004_int_bus at 20( 508) + 0 on 6902;
+file . "tz-08-sys/tz_sys_005_axi4_lite/rtl/tz_sys_005_axi4_lite.vhd" "11f5b755e810ff9b396a29ce92d41a16e463eaee" "20261115220002.078":
+  entity tz_sys_005_axi4_lite at 1( 0) + 0 on 6905;
+  architecture rtl of tz_sys_005_axi4_lite at 20( 556) + 0 on 6906;
+file . "tz-08-sys/tz_sys_006_avalon/rtl/tz_sys_006_avalon.vhd" "85bf5f8ed227a700d02deed287ea875658be5733" "20261115220002.702":
+  entity tz_sys_006_avalon at 1( 0) + 0 on 6909;
+  architecture rtl of tz_sys_006_avalon at 19( 526) + 0 on 6910;
+file . "tz-08-sys/tz_sys_007_wishbone/rtl/tz_sys_007_wishbone.vhd" "e917b0bd4672d19716188f4a05636f6f8f8ef9fb" "20261115220003.430":
+  entity tz_sys_007_wishbone at 1( 0) + 0 on 6913;
+  architecture rtl of tz_sys_007_wishbone at 20( 550) + 0 on 6914;
+file . "tz-08-sys/tz_sys_008_reg_bank/rtl/tz_sys_008_reg_bank.vhd" "ee5a2f7bb0033bc35d091705ea9a0844d580353c" "20261115220004.156":
+  entity tz_sys_008_reg_bank at 1( 0) + 0 on 6917;
+  architecture rtl of tz_sys_008_reg_bank at 18( 492) + 0 on 6918;
+file . "tz-08-sys/tz_sys_009_soc_interconnect/rtl/tz_sys_009_soc_interconnect.vhd" "0c7620e8b27795134111be1fb42d8222fcba761d" "20261115220005.050":
+  entity tz_sys_009_soc_interconnect at 1( 0) + 0 on 6921;
+  architecture rtl of tz_sys_009_soc_interconnect at 19( 490) + 0 on 6922;
+file . "tz-08-sys/tz_sys_010_bus_bridge/rtl/tz_sys_010_bus_bridge.vhd" "31d75efd899eb4e8c1ac86c431fffaf634ab3e00" "20261115220005.679":
+  entity tz_sys_010_bus_bridge at 1( 0) + 0 on 6925;
+  architecture rtl of tz_sys_010_bus_bridge at 18( 495) + 0 on 6926;
+file . "tz-09-dbg/tz_dbg_001_logic_ana/rtl/tz_dbg_001_logic_ana.vhd" "46e2c438c07e45362deb5253d85b771eeb0b9bfc" "20261115220006.410":
+  entity tz_dbg_001_logic_ana at 1( 0) + 0 on 6929;
+  architecture rtl of tz_dbg_001_logic_ana at 18( 478) + 0 on 6930;
+file . "tz-09-dbg/tz_dbg_002_pat_gen/rtl/tz_dbg_002_pat_gen.vhd" "1c249dadb18d7679f3ad0d848018fc2eabd22b16" "20261115220007.210":
+  entity tz_dbg_002_pat_gen at 1( 0) + 0 on 6933;
+  architecture rtl of tz_dbg_002_pat_gen at 17( 435) + 0 on 6934;
+file . "tz-09-dbg/tz_dbg_003_test_sig/rtl/tz_dbg_003_test_sig.vhd" "e24d370a9a0d45ccf9002338a79d00b6a7efdaed" "20261115220007.977":
+  entity tz_dbg_003_test_sig at 1( 0) + 0 on 6937;
+  architecture rtl of tz_dbg_003_test_sig at 17( 417) + 0 on 6938;
+file . "tz-09-dbg/tz_dbg_004_wave_cap/rtl/tz_dbg_004_wave_cap.vhd" "9fa57f35585f24c1973ccd6cb1698ef95b5af313" "20261115220009.063":
+  entity tz_dbg_004_wave_cap at 1( 0) + 0 on 6941;
+  architecture rtl of tz_dbg_004_wave_cap at 18( 470) + 0 on 6942;
+file . "tz-09-dbg/tz_dbg_005_err_count/rtl/tz_dbg_005_err_count.vhd" "5bd366283bc4a7f23136eaa696518435f44cb365" "20261115220010.001":
+  entity tz_dbg_005_err_count at 1( 0) + 0 on 6945;
+  architecture rtl of tz_dbg_005_err_count at 18( 475) + 0 on 6946;
+file . "tz-09-dbg/tz_dbg_006_crc/rtl/tz_dbg_006_crc.vhd" "48a8c65319d34412545a896346a53c9134dae9b4" "20261115220010.715":
+  entity tz_dbg_006_crc at 1( 0) + 0 on 6949;
+  architecture rtl of tz_dbg_006_crc at 18( 484) + 0 on 6950;
+file . "tz-09-dbg/tz_dbg_007_prbs/rtl/tz_dbg_007_prbs.vhd" "35092799a4998c0332c8371799ba9d11d8d992cc" "20261115220011.610":
+  entity tz_dbg_007_prbs at 1( 0) + 0 on 6953;
+  architecture rtl of tz_dbg_007_prbs at 17( 433) + 0 on 6954;
+file . "tz-09-dbg/tz_dbg_008_perf_mon/rtl/tz_dbg_008_perf_mon.vhd" "e3b47c082ae300610da0f35e869ab6d86e70f972" "20261115220012.370":
+  entity tz_dbg_008_perf_mon at 1( 0) + 0 on 6957;
+  architecture rtl of tz_dbg_008_perf_mon at 19( 502) + 0 on 6958;
+file . "tz-09-dbg/tz_dbg_009_bus_mon/rtl/tz_dbg_009_bus_mon.vhd" "44fc7378bda5fde29225683402b36f5ca64fc158" "20261115220013.152":
+  entity tz_dbg_009_bus_mon at 1( 0) + 0 on 6961;
+  architecture rtl of tz_dbg_009_bus_mon at 19( 506) + 0 on 6962;
+file . "tz-09-dbg/tz_dbg_010_trigger/rtl/tz_dbg_010_trigger.vhd" "3289a2263451f772565f1c84a17b15624f40ce7e" "20261115220014.064":
+  entity tz_dbg_010_trigger at 1( 0) + 0 on 6965;
+  architecture rtl of tz_dbg_010_trigger at 18( 450) + 0 on 6966;
+file . "tz-10-esp/tz_esp_001_sensor_fusion/rtl/tz_esp_001_sensor_fusion.vhd" "85bbfe7c0ed9cd00d176118c85806490f00cf712" "20261115220014.936":
+  entity tz_esp_001_sensor_fusion at 1( 0) + 0 on 6969;
+  architecture rtl of tz_esp_001_sensor_fusion at 19( 552) + 0 on 6970;
+file . "tz-10-esp/tz_esp_002_robotics/rtl/tz_esp_002_robotics.vhd" "8ff34790cb9dc68205311c22293c09b8460414ee" "20261115220015.934":
+  entity tz_esp_002_robotics at 1( 0) + 0 on 6973;
+  architecture rtl of tz_esp_002_robotics at 18( 498) + 0 on 6974;
+file . "tz-10-esp/tz_esp_003_auto_nav/rtl/tz_esp_003_auto_nav.vhd" "6ca94a0878bf0a2aa6b236831badc19f054f3c60" "20261115220016.564":
+  entity tz_esp_003_auto_nav at 1( 0) + 0 on 6977;
+  architecture rtl of tz_esp_003_auto_nav at 19( 546) + 0 on 6978;
+file . "tz-10-esp/tz_esp_004_aes/rtl/tz_esp_004_aes.vhd" "3e712aa1fe378fc1565cf1a876f05be303ed164b" "20261115220017.336":
+  entity tz_esp_004_aes at 1( 0) + 0 on 6981;
+  architecture rtl of tz_esp_004_aes at 19( 542) + 0 on 6982;
+file . "tz-10-esp/tz_esp_005_err_corr/rtl/tz_esp_005_err_corr.vhd" "e6ead017a4811a6104cbef787daa1f81a442a2bb" "20261115220018.013":
+  entity tz_esp_005_err_corr at 1( 0) + 0 on 6985;
+  architecture rtl of tz_esp_005_err_corr at 19( 526) + 0 on 6986;
+file . "tz-10-esp/tz_esp_006_cv_engine/rtl/tz_esp_006_cv_engine.vhd" "b188ac8d50d48299159f3e68328f661ab8a3b1d7" "20261115220018.935":
+  entity tz_esp_006_cv_engine at 1( 0) + 0 on 6989;
+  architecture rtl of tz_esp_006_cv_engine at 18( 495) + 0 on 6990;
+file . "tz-10-esp/tz_esp_007_ind_net/rtl/tz_esp_007_ind_net.vhd" "fa753f89f6679641c369d84171d95d0548a6243e" "20261115220019.666":
+  entity tz_esp_007_ind_net at 1( 0) + 0 on 6993;
+  architecture rtl of tz_esp_007_ind_net at 18( 457) + 0 on 6994;
+file . "tz-10-esp/tz_esp_008_sci_inst/rtl/tz_esp_008_sci_inst.vhd" "4875d069d2752d9b459593d2acbfa19c930e7324" "20261115220020.695":
+  entity tz_esp_008_sci_inst at 1( 0) + 0 on 6997;
+  architecture rtl of tz_esp_008_sci_inst at 18( 502) + 0 on 6998;
+file . "tz-10-esp/tz_esp_009_telecom_dsp/rtl/tz_esp_009_telecom_dsp.vhd" "f4557e9adb36ed272a1348333a3b138e719958e9" "20261115220021.547":
+  entity tz_esp_009_telecom_dsp at 1( 0) + 0 on 7001;
+  architecture rtl of tz_esp_009_telecom_dsp at 18( 491) + 0 on 7002;
+file . "tz-10-esp/tz_esp_010_nn_accel/rtl/tz_esp_010_nn_accel.vhd" "c8a53b76685aa9bc0bc328e63478a61fad49073c" "20261115220022.621":
+  entity tz_esp_010_nn_accel at 1( 0) + 0 on 7005;
+  architecture rtl of tz_esp_010_nn_accel at 19( 551) + 0 on 7006;
+file . "tz-01-log/tz_log_002_counter/rtl/tz_log_002_counter.vhd" "9a03d0879cb603b618fc9f5fc67e42bb2a494b4d" "20261115215914.299":
+  entity tz_log_002_counter at 1( 0) + 0 on 6613;
+  architecture rtl of tz_log_002_counter at 21( 474) + 0 on 6614;
+file . "tz-01-log/tz_log_003_freqdiv/rtl/tz_log_003_freqdiv.vhd" "0c368d3f0215fea26b3d9dc65b1713321c1b9ac3" "20261115215914.843":
+  entity tz_log_003_freqdiv at 1( 0) + 0 on 6617;
+  architecture rtl of tz_log_003_freqdiv at 21( 501) + 0 on 6618;
+file . "tz-01-log/tz_log_004_shiftreg/rtl/tz_log_004_shiftreg.vhd" "afa35ae94b5e7ed7c8798b7d74b12d6222a7b493" "20261115215915.402":
+  entity tz_log_004_shiftreg at 1( 0) + 0 on 6621;
+  architecture rtl of tz_log_004_shiftreg at 22( 532) + 0 on 6622;
+file . "tz-01-log/tz_log_005_comparator/rtl/tz_log_005_comparator.vhd" "ddf2328366e4cbe7ad4856e68bdb46023500d41e" "20261115215915.933":
+  entity tz_log_005_comparator at 1( 0) + 0 on 6625;
+  architecture rtl of tz_log_005_comparator at 24( 615) + 0 on 6626;
+file . "tz-01-log/tz_log_006_decoder/rtl/tz_log_006_decoder.vhd" "fff0281b8eee5d68c23485a7ff487d334729816c" "20261115215916.456":
+  entity tz_log_006_decoder at 1( 0) + 0 on 6629;
+  architecture rtl of tz_log_006_decoder at 21( 514) + 0 on 6630;
+file . "tz-01-log/tz_log_007_alu/rtl/tz_log_007_alu.vhd" "f86d693b0ae7733334f753b6de87e628e92f47b8" "20261115215916.981":
+  entity tz_log_007_alu at 1( 0) + 0 on 6633;
+  architecture rtl of tz_log_007_alu at 22( 596) + 0 on 6634;
+file . "tz-01-log/tz_log_008_fsm/rtl/tz_log_008_fsm.vhd" "b6303d4c734c938d2aa80b8253277252fedbda00" "20261115215917.520":
+  entity tz_log_008_fsm at 1( 0) + 0 on 6637;
+  architecture rtl of tz_log_008_fsm at 22( 524) + 0 on 6638;
+file . "tz-01-log/tz_log_009_pulsegen/rtl/tz_log_009_pulsegen.vhd" "1b35461759f2d2b60b493a75ebbebf4596ce2432" "20261115215918.056":
+  entity tz_log_009_pulsegen at 1( 0) + 0 on 6641;
+  architecture rtl of tz_log_009_pulsegen at 22( 538) + 0 on 6642;
+file . "tz-01-log/tz_log_010_widthconv/rtl/tz_log_010_widthconv.vhd" "6db0ba4a606158b8c64dd11a459ac944b17acb84" "20261115215918.599":
+  entity tz_log_010_widthconv at 1( 0) + 0 on 6645;
+  architecture rtl of tz_log_010_widthconv at 21( 523) + 0 on 6646;
