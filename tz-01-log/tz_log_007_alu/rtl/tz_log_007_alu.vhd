@@ -8,45 +8,52 @@ entity tz_log_007_alu is
         clk         : in  std_logic;
         rst_n       : in  std_logic;
         
-        -- 1. INTERFACE ESPECÍFICA DO IP
-        opcode      : in  std_logic_vector(2 downto 0);
-        data_a      : in  std_logic_vector(C_TLINK_DATA_WIDTH-1 downto 0);
-        data_b      : in  std_logic_vector(C_TLINK_DATA_WIDTH-1 downto 0);
-        execute     : in  std_logic;
+        -- INTERFACE FISICA DO IP
+        opcode : in std_logic_vector(1 downto 0);
+        din_a : in std_logic_vector(C_TLINK_DATA_WIDTH-1 downto 0);
+        din_b : in std_logic_vector(C_TLINK_DATA_WIDTH-1 downto 0);
         
-        -- 2. INTERFACE T-LINK
+        -- INTERFACE T-LINK
         tlink_tx    : out t_tlink_s2m;
         tlink_rx    : in  t_tlink_m2s
     );
 end entity;
 
 architecture rtl of tz_log_007_alu is
-    signal alu_result : std_logic_vector(C_TLINK_DATA_WIDTH-1 downto 0);
-    signal valid_flag : std_logic;
+    signal internal_data : std_logic_vector(C_TLINK_DATA_WIDTH-1 downto 0);
+    signal valid_flag    : std_logic;
+    signal a_uns, b_uns : unsigned(C_TLINK_DATA_WIDTH-1 downto 0);
 begin
     process(clk, rst_n)
     begin
         if rst_n = '0' then
-            alu_result <= (others => '0');
+            internal_data <= (others => '0');
+            
+        elsif rising_edge(clk) then
+            internal_data <= (others => '0'); 
+            a_uns <= unsigned(din_a); b_uns <= unsigned(din_b);
+        case opcode is
+            when "00" => internal_data <= std_logic_vector(a_uns + b_uns);
+            when "01" => internal_data <= std_logic_vector(a_uns - b_uns);
+            when "10" => internal_data <= din_a and din_b;
+            when "11" => internal_data <= din_a or din_b;
+            when others => internal_data <= (others => '0');
+        end case;
+        end if;
+    end process;
+
+    process(clk, rst_n)
+    begin
+        if rst_n = '0' then
             valid_flag <= '0';
         elsif rising_edge(clk) then
-            valid_flag <= execute;
-            if execute = '1' then
-                case opcode is
-                    when "000" => alu_result <= std_logic_vector(signed(data_a) + signed(data_b));
-                    when "001" => alu_result <= std_logic_vector(signed(data_a) - signed(data_b));
-                    when "010" => alu_result <= data_a and data_b;
-                    when "011" => alu_result <= data_a or data_b;
-                    when "100" => alu_result <= data_a xor data_b;
-                    when others => alu_result <= (others => '0');
-                end case;
-            end if;
+            valid_flag <= '1';
         end if;
     end process;
 
     tlink_tx.valid   <= valid_flag;
-    tlink_tx.data    <= alu_result;
-    tlink_tx.channel <= x"07";
+    tlink_tx.data    <= internal_data;
+    tlink_tx.channel <= x"07"; 
     tlink_tx.sop     <= '0';
     tlink_tx.eop     <= '0';
 end architecture rtl;

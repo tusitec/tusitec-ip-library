@@ -5,59 +5,39 @@ use work.tusitec_tlink_pkg.all;
 
 entity tz_dsp_006_dds is
     port (
-        clk         : in  std_logic;
-        rst_n       : in  std_logic;
-        
-        -- ==========================================
-        -- 1. INTERFACE ESPECIFICA DO IP (DDS Generator)
-        -- ==========================================
-        -- TODO: Declarar os pinos fisicos e de controle especificos aqui
-        
-        -- ==========================================
-        -- 2. INTERFACE T-LINK (Rumo ao Operador MEEC)
-        -- ==========================================
-        tlink_tx    : out t_tlink_s2m;
-        tlink_rx    : in  t_tlink_m2s
+        clk      : in  std_logic;
+        rst_n    : in  std_logic;
+        din : in std_logic_vector(C_TLINK_DATA_WIDTH-1 downto 0);
+        phase_inc : in std_logic_vector(31 downto 0);
+        sine_out : out std_logic_vector(15 downto 0);
+        tlink_tx : out t_tlink_s2m;
+        tlink_rx : in  t_tlink_m2s
     );
 end entity;
 
 architecture rtl of tz_dsp_006_dds is
-    signal internal_data : std_logic_vector(C_TLINK_DATA_WIDTH-1 downto 0);
-    signal valid_flag    : std_logic;
+    signal int_data : std_logic_vector(C_TLINK_DATA_WIDTH-1 downto 0);
+    signal v_flag   : std_logic;
+    signal phase_acc : unsigned(31 downto 0);
 begin
-    -------------------------------------------------------------------
-    -- 1. LOGICA CORE DO IP (DDS Generator)
-    -------------------------------------------------------------------
     process(clk, rst_n)
     begin
         if rst_n = '0' then
-            internal_data <= (others => '0');
+            int_data <= (others => '0');
+            v_flag <= '0';
+            phase_acc <= (others => '0'); sine_out <= (others => '0');
         elsif rising_edge(clk) then
-            -- TODO: Inserir a logica especifica do componente VHDL
-            internal_data <= (others => '0'); -- Placeholder
+            int_data <= (others => '0');
+            v_flag <= '1';
+            phase_acc <= phase_acc + unsigned(phase_inc);
+        sine_out <= std_logic_vector(phase_acc(31 downto 16));
+        int_data(15 downto 0) <= std_logic_vector(phase_acc(31 downto 16));
         end if;
     end process;
 
-    -------------------------------------------------------------------
-    -- 2. MAQUINA DE ESTADO DO BARRAMENTO T-LINK
-    -------------------------------------------------------------------
-    process(clk, rst_n)
-    begin
-        if rst_n = '0' then
-            valid_flag <= '0';
-        elsif rising_edge(clk) then
-            -- TODO: Levantar flag para '1' quando o processamento concluir
-            valid_flag <= '0'; -- Placeholder
-        end if;
-    end process;
-
-    -------------------------------------------------------------------
-    -- 3. EMPACOTAMENTO DA SAIDA
-    -------------------------------------------------------------------
-    tlink_tx.valid   <= valid_flag;
-    tlink_tx.data    <= internal_data;
-    tlink_tx.channel <= x"38"; -- ID Unico do Satelite
+    tlink_tx.valid   <= v_flag;
+    tlink_tx.data    <= int_data;
+    tlink_tx.channel <= x"38";
     tlink_tx.sop     <= '0';
     tlink_tx.eop     <= '0';
-
 end architecture rtl;

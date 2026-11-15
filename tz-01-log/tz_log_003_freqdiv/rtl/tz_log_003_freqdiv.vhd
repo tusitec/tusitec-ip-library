@@ -8,44 +8,46 @@ entity tz_log_003_freqdiv is
         clk         : in  std_logic;
         rst_n       : in  std_logic;
         
-        -- 1. INTERFACE ESPECÍFICA DO IP
-        divisor     : in  std_logic_vector(31 downto 0); -- Fator de divisão
+        -- INTERFACE FISICA DO IP
+        div_factor : in std_logic_vector(31 downto 0);
+        clk_out : out std_logic;
         
-        -- 2. INTERFACE T-LINK
+        -- INTERFACE T-LINK
         tlink_tx    : out t_tlink_s2m;
         tlink_rx    : in  t_tlink_m2s
     );
 end entity;
 
 architecture rtl of tz_log_003_freqdiv is
-    signal counter    : unsigned(31 downto 0);
-    signal tick       : std_logic;
+    signal internal_data : std_logic_vector(C_TLINK_DATA_WIDTH-1 downto 0);
+    signal valid_flag    : std_logic;
+    signal count_reg : unsigned(31 downto 0);
+    signal clk_out_reg : std_logic;
 begin
-    -------------------------------------------------------------------
-    -- 1. LÓGICA CORE: Divisor de Frequência
-    -------------------------------------------------------------------
     process(clk, rst_n)
     begin
         if rst_n = '0' then
-            counter <= (others => '0');
-            tick    <= '0';
+            internal_data <= (others => '0');
+            count_reg <= (others => '0'); clk_out_reg <= '0';
         elsif rising_edge(clk) then
-            if counter >= unsigned(divisor) - 1 then
-                counter <= (others => '0');
-                tick    <= '1';
-            else
-                counter <= counter + 1;
-                tick    <= '0';
-            end if;
+            internal_data <= (others => '0'); 
+            if count_reg >= unsigned(div_factor) then count_reg <= (others => '0'); clk_out_reg <= not clk_out_reg; else count_reg <= count_reg + 1; end if;
+        clk_out <= clk_out_reg; internal_data(0) <= clk_out_reg;
         end if;
     end process;
 
-    -------------------------------------------------------------------
-    -- 2. ENCAPSULAMENTO T-LINK
-    -------------------------------------------------------------------
-    tlink_tx.valid   <= tick; -- Só levanta a flag quando o divisor zera
-    tlink_tx.data    <= std_logic_vector(to_unsigned(1, C_TLINK_DATA_WIDTH)); -- Envia '1' como sinal de pulso
-    tlink_tx.channel <= x"03"; -- ID: TZ-LOG-003
+    process(clk, rst_n)
+    begin
+        if rst_n = '0' then
+            valid_flag <= '0';
+        elsif rising_edge(clk) then
+            valid_flag <= '1';
+        end if;
+    end process;
+
+    tlink_tx.valid   <= valid_flag;
+    tlink_tx.data    <= internal_data;
+    tlink_tx.channel <= x"03"; 
     tlink_tx.sop     <= '0';
     tlink_tx.eop     <= '0';
 end architecture rtl;

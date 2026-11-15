@@ -8,57 +8,47 @@ entity tz_log_008_fsm is
         clk         : in  std_logic;
         rst_n       : in  std_logic;
         
-        -- 1. INTERFACE ESPECÍFICA DO IP
-        trigger     : in  std_logic;
+        -- INTERFACE FISICA DO IP
+        start : in std_logic;
+        done : out std_logic;
+        state_out : out std_logic_vector(3 downto 0);
         
-        -- 2. INTERFACE T-LINK
+        -- INTERFACE T-LINK
         tlink_tx    : out t_tlink_s2m;
         tlink_rx    : in  t_tlink_m2s
     );
 end entity;
 
 architecture rtl of tz_log_008_fsm is
-    type t_state is (ST_IDLE, ST_RUN, ST_DONE);
-    signal current_state, next_state : t_state;
-    signal state_code : std_logic_vector(C_TLINK_DATA_WIDTH-1 downto 0);
+    signal internal_data : std_logic_vector(C_TLINK_DATA_WIDTH-1 downto 0);
+    signal valid_flag    : std_logic;
+    signal state_reg : std_logic_vector(3 downto 0);
 begin
-    -- Registro de Estado
     process(clk, rst_n)
     begin
         if rst_n = '0' then
-            current_state <= ST_IDLE;
+            internal_data <= (others => '0');
+            state_reg <= "0000";
         elsif rising_edge(clk) then
-            current_state <= next_state;
+            internal_data <= (others => '0'); 
+            if start = '1' then state_reg <= "0001"; elsif state_reg = "0001" then state_reg <= "0010"; elsif state_reg = "0010" then state_reg <= "0100"; else state_reg <= "0000"; end if;
+        if state_reg = "0100" then done <= '1'; else done <= '0'; end if;
+        state_out <= state_reg; internal_data(3 downto 0) <= state_reg;
         end if;
     end process;
 
-    -- Lógica Combinacional de Transição
-    process(current_state, trigger)
+    process(clk, rst_n)
     begin
-        next_state <= current_state;
-        case current_state is
-            when ST_IDLE =>
-                if trigger = '1' then next_state <= ST_RUN; end if;
-            when ST_RUN =>
-                next_state <= ST_DONE; -- Lógica fictícia para preencher futuramente
-            when ST_DONE =>
-                next_state <= ST_IDLE;
-        end case;
+        if rst_n = '0' then
+            valid_flag <= '0';
+        elsif rising_edge(clk) then
+            valid_flag <= '1';
+        end if;
     end process;
 
-    -- Decodificação de Estado para o T-Link
-    process(current_state)
-    begin
-        case current_state is
-            when ST_IDLE => state_code <= x"0000_0000";
-            when ST_RUN  => state_code <= x"0000_0001";
-            when ST_DONE => state_code <= x"0000_0002";
-        end case;
-    end process;
-
-    tlink_tx.valid   <= '1'; -- Reporta o estado continuamente
-    tlink_tx.data    <= state_code;
-    tlink_tx.channel <= x"08";
+    tlink_tx.valid   <= valid_flag;
+    tlink_tx.data    <= internal_data;
+    tlink_tx.channel <= x"08"; 
     tlink_tx.sop     <= '0';
     tlink_tx.eop     <= '0';
 end architecture rtl;

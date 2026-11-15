@@ -5,59 +5,42 @@ use work.tusitec_tlink_pkg.all;
 
 entity tz_dbg_001_logic_ana is
     port (
-        clk         : in  std_logic;
-        rst_n       : in  std_logic;
-        
-        -- ==========================================
-        -- 1. INTERFACE ESPECIFICA DO IP (Logic Analyzer)
-        -- ==========================================
-        -- TODO: Declarar os pinos fisicos e de controle especificos aqui
-        
-        -- ==========================================
-        -- 2. INTERFACE T-LINK (Rumo ao Operador MEEC)
-        -- ==========================================
-        tlink_tx    : out t_tlink_s2m;
-        tlink_rx    : in  t_tlink_m2s
+        clk      : in  std_logic;
+        rst_n    : in  std_logic;
+        din : in std_logic_vector(C_TLINK_DATA_WIDTH-1 downto 0);
+        probe_in : in std_logic_vector(15 downto 0);
+        trigger_match : out std_logic;
+        tlink_tx : out t_tlink_s2m;
+        tlink_rx : in  t_tlink_m2s
     );
 end entity;
 
 architecture rtl of tz_dbg_001_logic_ana is
-    signal internal_data : std_logic_vector(C_TLINK_DATA_WIDTH-1 downto 0);
-    signal valid_flag    : std_logic;
+    signal int_data : std_logic_vector(C_TLINK_DATA_WIDTH-1 downto 0);
+    signal v_flag   : std_logic;
+    signal trig_val : std_logic_vector(15 downto 0);
+    signal match_reg : std_logic;
 begin
-    -------------------------------------------------------------------
-    -- 1. LOGICA CORE DO IP (Logic Analyzer)
-    -------------------------------------------------------------------
     process(clk, rst_n)
     begin
         if rst_n = '0' then
-            internal_data <= (others => '0');
+            int_data <= (others => '0');
+            v_flag <= '0';
+            trig_val <= (others => '0'); match_reg <= '0'; trigger_match <= '0';
         elsif rising_edge(clk) then
-            -- TODO: Inserir a logica especifica do componente VHDL
-            internal_data <= (others => '0'); -- Placeholder
+            int_data <= (others => '0');
+            v_flag <= '1';
+            trig_val <= din(15 downto 0);
+        if probe_in = trig_val then match_reg <= '1'; else match_reg <= '0'; end if;
+        trigger_match <= match_reg;
+        int_data(15 downto 0) <= probe_in;
+        int_data(16) <= match_reg;
         end if;
     end process;
 
-    -------------------------------------------------------------------
-    -- 2. MAQUINA DE ESTADO DO BARRAMENTO T-LINK
-    -------------------------------------------------------------------
-    process(clk, rst_n)
-    begin
-        if rst_n = '0' then
-            valid_flag <= '0';
-        elsif rising_edge(clk) then
-            -- TODO: Levantar flag para '1' quando o processamento concluir
-            valid_flag <= '0'; -- Placeholder
-        end if;
-    end process;
-
-    -------------------------------------------------------------------
-    -- 3. EMPACOTAMENTO DA SAIDA
-    -------------------------------------------------------------------
-    tlink_tx.valid   <= valid_flag;
-    tlink_tx.data    <= internal_data;
-    tlink_tx.channel <= x"51"; -- ID Unico do Satelite
+    tlink_tx.valid   <= v_flag;
+    tlink_tx.data    <= int_data;
+    tlink_tx.channel <= x"51";
     tlink_tx.sop     <= '0';
     tlink_tx.eop     <= '0';
-
 end architecture rtl;

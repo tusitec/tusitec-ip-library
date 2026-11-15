@@ -5,59 +5,49 @@ use work.tusitec_tlink_pkg.all;
 
 entity tz_mem_003_sync_fifo is
     port (
-        clk         : in  std_logic;
-        rst_n       : in  std_logic;
-        
-        -- ==========================================
-        -- 1. INTERFACE ESPECIFICA DO IP (Synchronous FIFO)
-        -- ==========================================
-        -- TODO: Declarar os pinos fisicos e de controle especificos aqui
-        
-        -- ==========================================
-        -- 2. INTERFACE T-LINK (Rumo ao Operador MEEC)
-        -- ==========================================
-        tlink_tx    : out t_tlink_s2m;
-        tlink_rx    : in  t_tlink_m2s
+        clk      : in  std_logic;
+        rst_n    : in  std_logic;
+        din : in std_logic_vector(C_TLINK_DATA_WIDTH-1 downto 0);
+        wr_en : in std_logic;
+        rd_en : in std_logic;
+        dout : out std_logic_vector(31 downto 0);
+        full : out std_logic;
+        empty : out std_logic;
+        tlink_tx : out t_tlink_s2m;
+        tlink_rx : in  t_tlink_m2s
     );
 end entity;
 
 architecture rtl of tz_mem_003_sync_fifo is
-    signal internal_data : std_logic_vector(C_TLINK_DATA_WIDTH-1 downto 0);
-    signal valid_flag    : std_logic;
+    signal int_data : std_logic_vector(C_TLINK_DATA_WIDTH-1 downto 0);
+    signal v_flag   : std_logic;
+    type fifo_type is array (0 to 15) of std_logic_vector(31 downto 0);
+    signal fifo_mem : fifo_type := (others => (others => '0'));
+    signal wr_ptr, rd_ptr : unsigned(3 downto 0) := (others => '0');
+    signal count : unsigned(4 downto 0) := (others => '0');
 begin
-    -------------------------------------------------------------------
-    -- 1. LOGICA CORE DO IP (Synchronous FIFO)
-    -------------------------------------------------------------------
     process(clk, rst_n)
     begin
         if rst_n = '0' then
-            internal_data <= (others => '0');
+            int_data <= (others => '0');
+            v_flag <= '0';
+            wr_ptr <= (others => '0'); rd_ptr <= (others => '0'); count <= (others => '0'); dout <= (others => '0'); full <= '0'; empty <= '1';
         elsif rising_edge(clk) then
-            -- TODO: Inserir a logica especifica do componente VHDL
-            internal_data <= (others => '0'); -- Placeholder
+            int_data <= (others => '0');
+            v_flag <= '1';
+            if wr_en = '1' and count < 16 then fifo_mem(to_integer(wr_ptr)) <= din; wr_ptr <= wr_ptr + 1; end if;
+        if rd_en = '1' and count > 0 then dout <= fifo_mem(to_integer(rd_ptr)); rd_ptr <= rd_ptr + 1; else dout <= (others => '0'); end if;
+        if wr_en = '1' and rd_en = '0' and count < 16 then count <= count + 1;
+        elsif wr_en = '0' and rd_en = '1' and count > 0 then count <= count - 1; end if;
+        if count = 16 then full <= '1'; else full <= '0'; end if;
+        if count = 0 then empty <= '1'; else empty <= '0'; end if;
+        int_data(4 downto 0) <= std_logic_vector(count);
         end if;
     end process;
 
-    -------------------------------------------------------------------
-    -- 2. MAQUINA DE ESTADO DO BARRAMENTO T-LINK
-    -------------------------------------------------------------------
-    process(clk, rst_n)
-    begin
-        if rst_n = '0' then
-            valid_flag <= '0';
-        elsif rising_edge(clk) then
-            -- TODO: Levantar flag para '1' quando o processamento concluir
-            valid_flag <= '0'; -- Placeholder
-        end if;
-    end process;
-
-    -------------------------------------------------------------------
-    -- 3. EMPACOTAMENTO DA SAIDA
-    -------------------------------------------------------------------
-    tlink_tx.valid   <= valid_flag;
-    tlink_tx.data    <= internal_data;
-    tlink_tx.channel <= x"3F"; -- ID Unico do Satelite
+    tlink_tx.valid   <= v_flag;
+    tlink_tx.data    <= int_data;
+    tlink_tx.channel <= x"3F";
     tlink_tx.sop     <= '0';
     tlink_tx.eop     <= '0';
-
 end architecture rtl;
